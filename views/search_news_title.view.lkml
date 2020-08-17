@@ -49,6 +49,10 @@ view: search_news_title {
   dimension: D_URL {
     type: string
     sql: ${TABLE}.D_URL ;;
+    link: {
+      label: "원본문서 브라우져로 연결"
+      url: "{{ value }}"
+    }
   }
 
   dimension: DOCID {
